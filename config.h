@@ -11,10 +11,11 @@ static const char *prompt      = NULL;      /* -p  option; prompt to the left of
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#8ca0aa", "#282c33" },
-	[SchemeSel] = { "#8ca0aa", "#2e343f" },
+	[SchemeSel] = { "#bdd8e6", "#2e343f" },
 	[SchemeSelHighlight] = { "#ffc978", "#2e343f" },
 	[SchemeNormHighlight] = { "#ffc978", "#282c33" },
 	[SchemeOut] = { "#000000", "#00ffff" },
+	[SchemePrompt] = { "#bdd8e6", "#2c3038" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
@@ -27,4 +28,4 @@ static unsigned int lineheight = 40;         /* -h option; minimum height of a m
 static const char worddelimiters[] = " ";
 
 /* Size of the window border */
-static const unsigned int border_width = 3;
+static const unsigned int border_width = 6;
